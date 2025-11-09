@@ -1,18 +1,18 @@
-# 🤖 Kotlin Android Host tích hợp Flutter module (sử dụng AAR)
+#  Kotlin Android Host tích hợp Flutter module (sử dụng AAR)
 
-## 💡 Giới thiệu
+##  Giới thiệu
 
 Dự án này là một Android native app đơn giản sử dụng kotlin, được thiết kế để nhúng 1 Flutter module (sử dụng file aar) có sẵn, ở trong ví dụ này Flutter module sẽ là flutter_module_4.
 
 ---
 
-## ⚙️ Tính năng
+##  Tính năng
 
 * Ứng dụng bao gồm 1 button, sau khi nhấn vào button sẽ tiến hành chuyển qua giao diện của Flutter module
 
 ---
 
-## 🧱 Cấu trúc ứng dụng
+##  Cấu trúc ứng dụng
 
 ```text
 My_kotlin_android_source_aar/
@@ -33,7 +33,9 @@ My_kotlin_android_source_aar/
 ├── build.gradle.kts                # (Cấu hình build gốc của project)
 ├── settings.gradle.kts             # (QUAN TRỌNG: Nơi khai báo module Flutter)
 └── README.md
-🚀 Cài đặt
+
+
+## Cài đặt
 Để chạy được Flutter module điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) như sau:
 
 Kotlin
