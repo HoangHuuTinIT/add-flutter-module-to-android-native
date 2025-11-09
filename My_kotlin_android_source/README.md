@@ -39,7 +39,6 @@ Với việc bạn clone repo chứa 2 file Flutter module và My_kotlin_android
 
 Nếu bạn muốn di chuyển vị trí của Flutter module (flutter_module_4) thì bạn phải tiến hành điều chỉnh filePath trong settings.gradle.kts (Project Settings) để điều chỉnh đúng đến được vị trí của file include_flutter.groovy trong module:
 
-Kotlin
 ```text
 rootProject.name = "My_kotlin_android_source"
 include(":app")
@@ -47,4 +46,9 @@ include(":app")
 //Thay đường dẫn này đến đúng địa chỉ trên máy bạn
 val filePath = settingsDir.parentFile.toString() + "/flutter_module_4/.android/include_flutter.groovy"
 apply(from = File(filePath))
+```
+## Hướng dẫn chi tiết
+Tham khảo tại:
+```text
+https://docs.google.com/document/d/1wwVZMIticAMh5WwTF1ljF79VzA4zHaN_swNXS-dFBFA/edit?tab=t.0#heading=h.p4ubxa1zwa0h
 ```
