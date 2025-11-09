@@ -40,7 +40,7 @@ My_kotlin_android_source_aar/
 Để chạy được Flutter module điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) như sau:
 
 Kotlin
-
+```text
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
@@ -51,3 +51,4 @@ dependencyResolutionManagement {
         maven(url = "C:\\Users\\Admin\\AndroidStudioProjects\\flutter_module_4\\build\\host\\outputs\\repo")
     }
 }
+```
