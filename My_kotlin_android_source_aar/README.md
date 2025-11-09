@@ -34,6 +34,7 @@ My_kotlin_android_source_aar/
 ├── settings.gradle.kts             # (QUAN TRỌNG: Nơi khai báo module Flutter)
 └── README.md
 
+---
 
 ## Cài đặt
 Để chạy được Flutter module điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) như sau:
