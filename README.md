@@ -27,16 +27,14 @@ git clone https://github.com/HoangHuuTinIT/add-flutter-module-to-android-native.
 ```
 ### Bước 2: Cài đặt Flutter Module (Bắt buộc)
 Đây là bước bắt buộc để cả hai project Android có thể tìm thấy và build module.
-# Đi vào thư mục module
+#### Đi vào thư mục module
 cd module_flutter
 
-# Cài đặt dependencies
+#### Cài đặt dependencies
 flutter pub get
 
 ## Chạy Demo
 ### Cách chạy Demo My_kotlin_android_source (Tích hợp Mã nguồn)
-Phương pháp này build Flutter song song với Android.
-
 1.Mở Android Studio.
 
 2.Chọn "Open" (hoặc "Open an existing project").
@@ -71,6 +69,7 @@ apply(from = File(filePath))
 5.Đợi Gradle đồng bộ (Sync).
 
 6.Nhấn nút "Run 'app'" để build và chạy ứng dụng.
+
 Lưu ý: Để chạy được Flutter module trong trường hợp sử dụng file AAR, sau khi clone về bạn phải điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) của My_kotlin_android_source_aar như sau:
 ```text
 dependencyResolutionManagement {
