@@ -1,130 +1,79 @@
-Unsplash Flutter Module
+#  Unsplash Flutter Module
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue)
+![Platform](https://img.shields.io/badge/platform-Module-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 Một module Flutter được xây dựng bằng Nylo Framework, đóng vai trò như một client cho API của Unsplash.
 
+---
 
-
-Giới thiệu
+##  Giới thiệu
 
 Dự án này là một Flutter Module độc lập, được thiết kế để nhúng (add-to-app) vào một ứng dụng Android gốc (Native) có sẵn.
 
-
-
 Dự án được xây dựng trên Nylo Framework, tuân thủ kiến trúc Controller/Service/State rõ ràng, giúp dễ dàng bảo trì và mở rộng.
 
+---
 
+##  Tính năng
 
-Tính năng:
+* **Giao diện Tab:** Giao diện chính sử dụng TabBar với 2 tab "HOME" và "COLLECTIONS".
 
+* **Tab HOME:**
+    * Hiển thị danh sách các ảnh
+    * Xem thông tin chi tiết ảnh
+    * Xem thông tin người dùng
 
+* **Tab COLLECTIONS:**
+    * Xem danh sách collection
+    * Xem thông tin collection
+    * Xem thông tin người tạo collection
 
-Giao diện Tab: Giao diện chính sử dụng TabBar với 2 tab "HOME" và "COLLECTIONS".
+* **Cuộn vô hạn (Infinite Scroll):** Tải thêm ảnh khi người dùng cuộn xuống cuối danh sách ở tất cả các trang (Home, Collections, User Photos, User Likes...).
 
+---
 
+##  Cấu trúc ứng dụng
 
-Tab HOME:
-
-* Hiển thị danh sách các ảnh
-* Xem thông tin chi tiết ảnh
-* Xem thông tin người dùng
-
-
-
-Tab COLLECTIONS:
-
-* Xem danh sách collection
-* Xem thông tin collection
-* Xem thông tin người tạo collection
-
-
-
-Cuộn vô hạn (Infinite Scroll): Tải thêm ảnh khi người dùng cuộn xuống cuối danh sách ở tất cả các trang (Home, Collections, User Photos, User Likes...).
-
-
-
-Cấu trúc ứng dụng:
-
-
-
-module\_flutter/
-
-├── env # Chứa API key và cấu hình môi trường
-
-├── pubspec.yaml # Định nghĩa các dependencies của dự án
-
+```text
+module_flutter/
+├── env                   # Chứa API key và cấu hình môi trường
+├── pubspec.yaml          # Định nghĩa các dependencies của dự án
 ├── README.md
-
 ├── lib/
-
 │   ├── app/
-
-│   │   ├── constants/    # (Nơi chứa các hằng số, VD: app\_dimensions.dart)
-
+│   │   ├── constants/    # (Nơi chứa các hằng số, VD: app_dimensions.dart)
 │   │   ├── controllers/  # (Logic nghiệp vụ)
-
 │   │   ├── models/       # (Đối tượng dữ liệu)
-
 │   │   ├── networking/   # (ApiService)
-
 │   │   └── states/       # (Các lớp trạng thái)
-
 │   │
-
 │   ├── config/
-
 │   │   └── decoders.dart # (Nơi đăng ký Models, Controllers)
-
 │   │
-
 │   ├── resources/
-
 │   │   ├── pages/        # (Các màn hình)
-
 │   │   └── widgets/      # (Các UI tái sử dụng)
-
 │   │
-
 │   └── routes/
-
-│       └── router.dart (Tệp định nghĩa route chính)
-
+│       └── router.dart   # (Tệp định nghĩa route chính)
 │
-
 ├── public/
+    ├── app_icon/         # (Icon ứng dụng)
+    └── images/           # (Hình ảnh bạn sử dụng)
+```
+## Cài đặt
+Cấu hình API Key
+Dự án này cần API key của Unsplash.
 
-    ├── app\_icon/# (Icon ứng dụng)
+```text
+UNSPLASH_ACCESS_KEY="YOUR_UNSPLASH_ACCESS_KEY"
+API_BASE_URL="[https://api.unsplash.com](https://api.unsplash.com)"
+```
+Lưu ý: Bạn cần thay thế YOUR_UNSPLASH_ACCESS_KEY bằng API key của bạn.
 
-    └── images/ # (Hình ảnh bạn sử dụng)
-
-
-
-Cài đặt
-
-Cấu hình API Key : Dự án này cần API key của Unsplash.
-
-
-
-Đoạn mã
-
-
-
-UNSPLASH\_ACCESS\_KEY="YOUR\_UNSPLASH\_ACCESS\_KEY"
-
-API\_BASE\_URL="https://api.unsplash.com"
-
-
-
-Lưu ý: Bạn cần thay thế YOUR\_UNSPLASH\_ACCESS\_KEY bằng API key của bạn.
-
-
-
-Cài dependencies:
-
-
-
-Bash
-
-
-
+Cài dependencies
+```text
 flutter pub get
-
+```
