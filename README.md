@@ -21,9 +21,10 @@ Repo này chứa 3 project độc lập:
 ##  Cài đặt
 Dưới đây là hướng dẫn để clone và chạy cả hai phiên bản demo.
 ### Bước 1: Tải mã nguồn (Clone)
-```bash
+Tải repo:
+```text
 git clone https://github.com/HoangHuuTinIT/add-flutter-module-to-android-native.git
----
+```
 ### Bước 2: Cài đặt Flutter Module (Bắt buộc)
 Đây là bước bắt buộc để cả hai project Android có thể tìm thấy và build module.
 # Đi vào thư mục module
@@ -33,7 +34,7 @@ cd module_flutter
 flutter pub get
 
 ## Chạy Demo
-###Cách chạy Demo My_kotlin_android_source (Tích hợp Mã nguồn)
+### Cách chạy Demo My_kotlin_android_source (Tích hợp Mã nguồn)
 Phương pháp này build Flutter song song với Android.
 
 1.Mở Android Studio.
