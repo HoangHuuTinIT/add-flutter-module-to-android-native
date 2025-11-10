@@ -70,7 +70,7 @@ apply(from = File(filePath))
 
 5. Nhấn nút "Run 'app'" để build và chạy ứng dụng.
 
-Lưu ý: Để chạy được Flutter module trong trường hợp sử dụng file AAR, sau khi clone về bạn phải điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) của My_kotlin_android_source_aar như sau:
+Lưu ý: Để chạy được Flutter module trong trường hợp sử dụng file AAR, sau khi clone về có thể vị trí file AAR trên máy của bạn sẽ không giống như trong repo này,bạn phải điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) của My_kotlin_android_source_aar như sau:
 ```text
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
@@ -89,4 +89,3 @@ Tham khảo tại đường link :
 ```text
 https://docs.google.com/document/d/1wwVZMIticAMh5WwTF1ljF79VzA4zHaN_swNXS-dFBFA/edit?tab=t.0#heading=h.p4ubxa1zwa0h
 ```
-Hoặc đọc file READ.ME của My_kotlin_android_source và My_kotlin_android_source_aar
