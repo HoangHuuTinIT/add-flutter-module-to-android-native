@@ -13,7 +13,10 @@ class MainActivity : AppCompatActivity() {
         val btnGoToFlutter: Button = findViewById(R.id.btnGoToFlutter)
         btnGoToFlutter.setOnClickListener {
             startActivity(
-                FlutterActivity.createDefaultIntent(this)
+                FlutterActivity
+                    //my_engine_id chính là id của cache bạn đã tạo
+                    .withCachedEngine("my_engine_id")
+                    .build(this)
             )
         }
     }
