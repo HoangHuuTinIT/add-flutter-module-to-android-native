@@ -1,6 +1,6 @@
-#  Tích hợp Module Flutter vào Android Native (Hai phương pháp)
+#  Tích hợp Module Flutter vào Android Native
 
-Repo này trình bày hai phương pháp phổ biến để tích hợp một module Flutter vào một ứng dụng Android Native (Kotlin).
+Repo này trình bày hai phương pháp phổ biến để tích hợp một module Flutter vào một ứng dụng Android Native (Kotlin) là tích hợp mã nguồn(Module source code) và tích hợp file AAR.
 
 ---
 
@@ -10,9 +10,9 @@ Repo này chứa 3 project độc lập:
 
 1.   **`flutter_module_4`**: Đây là một module Flutter về việc clone ứng dụng resplash, được xây dựng bằng Nylo Framework. Đây là module sẽ được nhúng vào hai ứng dụng Native bên dưới.
 
-2.   **`My_kotlin_android_source`**: Ứng dụng Android Native (Host) tích hợp `module_flutter` bằng phương pháp **tham chiếu mã nguồn (Source Code)**.
+2.   **`My_kotlin_android_source`**: Ứng dụng Android Native (Host) tích hợp `module_flutter` bằng phương pháp **tích hợp mã nguồn (Module source code)**.
 
-3.   **`My_kotlin_android_source_aar`**: Ứng dụng Android Native (Host) tích hợp `module_flutter` bằng phương pháp **sử dụng file AAR**.
+3.   **`My_kotlin_android_source_aar`**: Ứng dụng Android Native (Host) tích hợp `module_flutter` bằng phương pháp **tích hợp file AAR**.
     
 ---
 ##  Cài đặt
