@@ -2,13 +2,13 @@
 
 ##  Giới thiệu
 
-Dự án này là một Android native app đơn giản sử dụng kotlin, được thiết kế để nhúng 1 Flutter module (sử dụng mã nguồn) có sẵn, ở trong ví dụ này Flutter module sẽ là flutter_module_4.
+Dự án này là một Android native app đơn giản sử dụng kotlin, được thiết kế để nhúng 1 Flutter module (sử dụng mã nguồn) có sẵn, ở trong project này Flutter module sẽ là flutter_module_4.
 
 ---
 
 ##  Tính năng
 
-* Ứng dụng bao gồm 1 button, sau khi nhấn vào button sẽ tiến hành chuyển qua giao diện của Flutter module
+Ứng dụng bao gồm 1 button, sau khi nhấn vào button sẽ tiến hành chuyển qua giao diện của Flutter module
 
 ---
 
@@ -48,7 +48,5 @@ val filePath = settingsDir.parentFile.toString() + "/flutter_module_4/.android/i
 apply(from = File(filePath))
 ```
 ## Hướng dẫn chi tiết
-Tham khảo tại:
-```text
-https://docs.google.com/document/d/1wwVZMIticAMh5WwTF1ljF79VzA4zHaN_swNXS-dFBFA/edit?tab=t.0#heading=h.p4ubxa1zwa0h
-```
+Tham khảo tại: https://docs.google.com/document/d/1wwVZMIticAMh5WwTF1ljF79VzA4zHaN_swNXS-dFBFA/edit?tab=t.0#heading=h.p4ubxa1zwa0h
+
