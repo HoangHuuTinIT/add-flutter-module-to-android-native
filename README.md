@@ -26,7 +26,7 @@ git clone https://github.com/HoangHuuTinIT/add-flutter-module-to-android-native.
 Đây là bước bắt buộc để cả hai project Android có thể tìm thấy và build module.
 #### Đi vào thư mục module
 ```text
-cd module_flutter
+cd flutter_module_4
 ```
 #### Cài đặt dependencies
 ```text
