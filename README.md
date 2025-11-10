@@ -85,5 +85,6 @@ dependencyResolutionManagement {
 ```
 ---
 ## Cách tích hợp chi tiết:
-[Tham khảo tại đường link] : (https://docs.google.com/document/d/1wwVZMIticAMh5WwTF1ljF79VzA4zHaN_swNXS-dFBFA/edit?tab=t.0#heading=h.p4ubxa1zwa0h)
+Tham khảo tại đường link:
+https://docs.google.com/document/d/1wwVZMIticAMh5WwTF1ljF79VzA4zHaN_swNXS-dFBFA/edit?tab=t.0#heading=h.p4ubxa1zwa0h
 
