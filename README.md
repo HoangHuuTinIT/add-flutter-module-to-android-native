@@ -36,15 +36,15 @@ flutter pub get
 ## Chạy Demo
 
 ### Cách chạy Demo My_kotlin_android_source (Tích hợp Mã nguồn)
-1.Mở Android Studio.
+1. Mở Android Studio.
 
-2.Chọn "Open" (hoặc "Open an existing project").
+2. Chọn "Open" (hoặc "Open an existing project").
 
-3.Tìm đến thư mục My_kotlin_android_source (hoặc kotlin-android-host) trong repo bạn vừa clone.
+3. Tìm đến thư mục My_kotlin_android_source (hoặc kotlin-android-host) trong repo bạn vừa clone.
 
-4.Mở lên và đợi Android Studio đồng bộ (Sync) Gradle.
+4. Mở lên và đợi Android Studio đồng bộ (Sync) Gradle.
 
-5.Nhấn nút "Run 'app'" để build và chạy ứng dụng.
+5. Nhấn nút "Run 'app'" để build và chạy ứng dụng.
 
 Lưu ý: Với việc bạn clone repo chứa 2 file Flutter module và My_kotlin_android_source về ở cùng thư mục cha. Bạn chỉ cần mở và chạy My_kotlin_android_source lúc đó module cũng được build đồng thời.
 
@@ -59,17 +59,16 @@ apply(from = File(filePath))
 ```
 
 ### Cách chạy Demo My_kotlin_android_source_aar (Tích hợp tệp AAR)
-1.Chạy App Android
 
-2.Mở Android Studio (bạn có thể mở một cửa sổ mới).
+1. Mở Android Studio (bạn có thể mở một cửa sổ mới).
 
-3.Chọn "Open".
+2. Chọn "Open".
 
-4.Trỏ đến thư mục My_kotlin_android_source_aar.
+3. Trỏ đến thư mục My_kotlin_android_source_aar.
 
-5.Đợi Gradle đồng bộ (Sync).
+4. Đợi Gradle đồng bộ (Sync).
 
-6.Nhấn nút "Run 'app'" để build và chạy ứng dụng.
+5. Nhấn nút "Run 'app'" để build và chạy ứng dụng.
 
 Lưu ý: Để chạy được Flutter module trong trường hợp sử dụng file AAR, sau khi clone về bạn phải điều chỉnh dependencyResolutionManagement trong settings.gradle.kts (Project Settings) của My_kotlin_android_source_aar như sau:
 ```text
